@@ -13,7 +13,6 @@
 
     <link rel="stylesheet" type="text/css" href="default.css">
     <link id="theme-style" rel="stylesheet" type="text/css" href="">
-    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 </head>
 
 <body>
@@ -39,8 +38,7 @@
 
 
                     <ul id="navigation">
-                        <!-- <li><a href="#contact-form">Contact</a></li> -->
-                        <li><a href="#twitterHandle">Contact</a></li>
+                        <li><a href="#contact-form">Contact</a></li>
                     </ul>
                 </div>
 
@@ -171,34 +169,30 @@
         </div>
     </section>
 
-    <!-- <section class="s2">
+    <section class="s2">
         <div class="main-container">
             <a href=""></a>
             <h3 style="text-align: center;">Get In Touch</h3>
 
-            <form id="contact-form" action="https://send.pageclip.co/l1mHqLKHWAOLaiG8qRcgKeFVbhqgO1XV" class="pageclip-form" method="post">
+            <div id="contact-form"  >
                 <a name=" contact "></a>
 
                 <label>Name</label>
-                <input class="input-field " type="text " name="name">
+                <input id="name" class="input-field " type="text " name="name">
 
                 <label>Subject</label>
-                <input class="input-field " type="text " name="subject">
+                <input id="subject" class="input-field " type="text " name="subject">
 
                 <label>Email</label>
-                <input class="input-field " type="text " name="email">
+                <input id="email" class="input-field " type="email" name="email">
 
                 <label>Message</label>
-                <textarea class="input-field " name="message"></textarea>
+                <textarea id="message" class="input-field " name="message"></textarea>
 
-                <button id="submit-btn" type="submit" class="pageclip-form__submit"><span>Send</span></button>
-            </form>
+                <button id="submit-btn" type="submit" onclick="submitData()" ><span id="submitSpan">Send</span></button>
+            </div>
         </div>
-    </section> -->
-
-   
-
-    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    </section>
     <script type="text/javascript " src="script.js "></script>
 
 </body>
